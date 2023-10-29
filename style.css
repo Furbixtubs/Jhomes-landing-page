@@ -1,0 +1,655 @@
+@import url('clash-grotesk.css');
+@import url(https://db.onlinewebfonts.com/c/0376a58122a881d16a294512d3c947b1?family=Proxima+Nova+Regular);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot");
+    src: url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#Proxima Nova Regular")format("svg");
+}
+
+@font-face {
+    font-family: 'ClashGrotesk-Variable';
+    src: url('fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Variable.woff') format('woff'),
+         url('fonts/ClashGrotesk-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Extralight';
+    src: url('fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Extralight.woff') format('woff'),
+         url('fonts/ClashGrotesk-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Light';
+    src: url('fonts/ClashGrotesk-Light.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Light.woff') format('woff'),
+         url('fonts/ClashGrotesk-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Regular';
+    src: url('fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Regular.woff') format('woff'),
+         url('fonts/ClashGrotesk-Regular.tff') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Medium';
+    src: url('fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Medium.woff') format('woff'),
+         url('fonts/ClashGrotesk-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Semibold';
+    src: url('fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Semibold.woff') format('woff'),
+         url('fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Bold';
+    src: url('fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Bold.woff') format('woff'),
+         url('fonts/ClashGrotesk-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+body {
+    font-family: 'ClashGrotesk-Regular';
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.jhomes {
+    font-family: 'ClashGrotesk-Regular';
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    /* line-height: normal; */
+    }
+
+.logo {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 7.5rem;
+    margin-top: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    margin-right: 7.5rem;
+    font-family: "Proxima Nova Regular";
+}
+
+.nav-links, .navved, a {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    /* font-family: Proxima Nova; */
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.nav-links, ul, li {
+    /* padding: 0 10px; */
+    gap: 1.25rem;
+}
+
+.signup {
+    color: #FFA800;
+    /* font-family: Proxima Nova; */
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.iconheader {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3rem;
+    font-family: "Proxima Nova Regular";
+}
+.stupid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #000;
+    /* font-family: Proxima Nova; */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.2rem */
+    margin-top: 3.5rem;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-left: 7.5rem;
+    margin-top: 5.19rem;
+    gap: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 1px solid black; */
+}
+
+.mainhousepng {
+    /* border: 1px solid black; */
+    width: 50%;
+    margin-right: 7.5rem;
+    /* border: 1px solid black; */
+}
+
+.housepng {
+    margin-left: 2.5rem;
+    width: 100%;
+}
+
+h1 {
+    color: #000;
+    /* font-family: Clash Grotesk; */
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 0;
+    width: 100%;
+    font-family: 'ClashGrotesk-Semibold';
+}
+
+h1 > span {
+    color: #FFA800;
+    /* font-family: Clash Grotesk; */
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.lefty > p {
+    font-family: "Proxima Nova Regular";
+}
+
+.lefty {
+    padding-top: 0;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+ .dream {
+    color: #000;
+    /* font-family: Proxima Nova; */
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2.25rem */
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+ }
+
+ .lefty > button {
+    font-family: "Proxima Nova Regular";
+    border-radius: 0.5rem;
+    background: #FFBF23;
+    border: none;
+    display: flex;
+    padding: 0.90625rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    /* margin-bottom: 7rem; */
+    margin-top: 2.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+.section2 {
+    background: #F5FAFF;
+    display: flex;
+    margin-top: 6.5rem;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.stayahead {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    margin-left: 7.5rem;
+    justify-content: center;
+    /* align-items: center; */
+    width: 50%;
+    margin-bottom: 10.78rem;
+    margin-top: 10.78rem;
+}
+
+.righty {
+    width: 50%;
+    margin-right: 7.5rem;
+    /* border: 1px solid black; */
+    margin-bottom: 10.78rem;
+    position: relative;
+}
+
+.stayahead > h2 {
+    color: #141414;
+    font-family: 'ClashGrotesk-Medium';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 3rem */
+    letter-spacing: 0.03125rem;
+}
+
+.stayahead > p {
+    color: #3D3D3D;
+    font-family: "Proxima Nova Regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+    margin-top: 2rem;
+}
+
+.stayahead > button {
+    /* display: flex; */
+    padding: 0.90625rem 1.5rem;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    border: 1px solid #464E5F;
+    background: transparent;
+    margin-top: 2rem;
+    width: 9.125rem;
+    font-family: "Proxima Nova Regular";
+}
+
+.thisimage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 4rem;
+    /* z-index: 1; */
+}
+
+.firsticon {
+    background-color: white;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    /* z-index: 2; */
+    top: 50%;
+    right: 50%;
+}
+.firsticon > img {
+    margin-top: 2.38rem;
+    /* margin-left: 4.81rem; */
+}
+
+.firsticon > h3 {
+    font-family: 'ClashGrotesk-Medium';
+}
+
+.firsticon > p {
+    margin-bottom: 2.38rem;
+    font-family: "Proxima Nova Regular";
+}
+
+.secondicon {
+    background-color: white;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    /* z-index: 2; */
+    top: 80%;
+    right: 3%;
+}
+
+.secondicon > img {
+    margin-top: 2.38rem;
+    /* margin-left: 4.81rem; */
+}
+
+.secondicon > h3 {
+    font-family: 'ClashGrotesk-Medium';
+}
+
+.secondicon > p {
+    margin-bottom: 2.38rem;
+    font-family: "Proxima Nova Regular";
+}
+
+.section3 {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 6.5rem;
+    /* margin-bottom: 6.5rem; */
+    position: relative;
+}
+
+.nolefty {
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-left: 7.88rem;
+    position: relative;
+}
+
+.righthandside {
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-right: 7.88rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.disc {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #3D3D3D;
+    font-family: "Proxima Nova Regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+}
+
+.righthandside > h4 {
+    color: #141414;
+    font-family: 'ClashGrotesk-Medium';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 3rem */
+    letter-spacing: 0.03125rem;
+    margin-bottom: 1.5rem;
+}
+
+.righthandside > p {
+    color: #292929;
+    font-family: "Proxima Nova Regular";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */
+    margin-bottom: 1.5rem;
+}
+
+.righthandside > button {
+    font-family: "Proxima Nova Regular";
+    width: 10.375rem;
+    padding: 0.91rem 1.5rem;
+    margin-top: 2rem;
+    background: transparent;
+    border-radius: 0.5rem;
+    border: 1px solid #464E5F;  
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.righthandside > button:hover {
+    background-color: #464E5F;
+    border-color: #141414;
+    color: #141414;
+}
+
+.bed {
+    position: absolute;
+    top: -0%;
+    right: 0;
+    margin-top: 0;
+}
+
+.thirdicon {
+    /* background-color: white;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
+    position: absolute; 
+    z-index: 2;
+    top: 50%;
+    right: 50%; */
+}
+
+.thirdicon > img {
+    margin-top: 2.38rem;
+    /* margin-left: 4.81rem; */
+}
+
+.thirdicon > h3 {
+
+}
+
+.thirdicon > p {
+    margin-bottom: 2.38rem;
+}
+
+.fourthicon {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    top: 90%;
+    right: 3%;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
+}
+
+.love {
+    display: flex;
+    /* padding: 1rem */
+    flex-direction: column;
+    align-items: flex-end;
+    /* gap: 0.25rem; */
+    /* flex-shrink: 0; */
+}
+
+.iconimages {
+    display: flex;
+    gap: 1rem;
+}
+
+.nawaoh {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nawaoh > h3 {
+    font-family: 'ClashGrotesk-Medium';
+    color: #000;
+    /* font-family: Clash Grotesk; */
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 2.25rem */
+    letter-spacing: 0.03125rem;
+}
+
+.nawaoh > p {
+    font-family: 'ClashGrotesk-Medium';
+    color: #3D3D3D;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 1.5rem */
+    letter-spacing: 0.03125rem;
+}
+
+.thirdicon {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    /* z-index: 2; */
+    border-radius: 1.25rem;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
+    background-color: #ffff;
+    padding: 1rem;
+    bottom: -15%;
+    left: 15%;
+}
+
+.joy {
+    color: #525252;
+    font-family: "Proxima Nova Regular";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.03125rem;
+}
+
+.email {
+    color: #141414;
+    font-family: "Proxima Nova Regular";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.3125rem */
+    letter-spacing: 0.03125rem;
+}
+
+.nawaoh > div > h3 {
+    color: #000;
+    font-family: Clash Grotesk;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 2.25rem */
+    letter-spacing: 0.03125rem;
+}
+
+footer {
+    background-color: #1E1E1E;
+    width: 100%;
+    margin-top: 10rem;
+    padding: 2rem 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jhomess {
+    color: #FFF;
+    font-family: 'ClashGrotesk-Medium';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7.5rem;
+    align-items: flex-end;
+}
+
+h5 {
+    color: #FFF;
+    font-family: 'ClashGrotesk-Medium';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+.last {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 319px) {
+    
+}
+
+/* Tablets and larger devices */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    
+}
+
+/* Desktops and larger screens */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    
+}
