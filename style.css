@@ -176,7 +176,9 @@ body {
 
 .section1 {
     display: flex;
-    justify-content: space-between;
+
+    /* justify-content: space-between; */
+
     /* align-items: center; */
     margin-left: 7.5rem;
     margin-top: 5.19rem;
@@ -312,7 +314,7 @@ h1 > span {
     border: 1px solid #464E5F;
     background: transparent;
     margin-top: 2rem;
-    width: 9.125rem;
+    width: 20%;
     font-family: "Proxima Nova Regular";
 }
 
@@ -326,7 +328,8 @@ h1 > span {
 
 .firsticon {
     background-color: white;
-    width: 12rem;
+    /* width: 12rem; */
+    width: 23%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +340,7 @@ h1 > span {
     position: absolute;
     /* z-index: 2; */
     top: 50%;
-    right: 50%;
+    right: 52.5%;
 }
 .firsticon > img {
     margin-top: 2.38rem;
@@ -355,7 +358,8 @@ h1 > span {
 
 .secondicon {
     background-color: white;
-    width: 12rem;
+    /* width: 12rem; */
+    width: 23%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -365,7 +369,7 @@ h1 > span {
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20);
     position: absolute;
     /* z-index: 2; */
-    top: 80%;
+    top: 84%;
     right: 3%;
 }
 
@@ -443,7 +447,8 @@ h1 > span {
 
 .righthandside > button {
     font-family: "Proxima Nova Regular";
-    width: 10.375rem;
+    /* width: 10.375rem; */
+    width: 20%;
     padding: 0.91rem 1.5rem;
     margin-top: 2rem;
     background: transparent;
@@ -637,15 +642,58 @@ h5 {
 .last {
     display: flex;
     gap: 1rem;
+
 }
 
 /* Mobile devices */
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 320px) {
+    .section1 { 
+        flex-direction: column;
+        margin: 1rem 1.25rem;
+
+    }
+    .lefty{
+        width: 100%;
     
+    }
+    h1{
+        font-size: 2rem;
+        width: 100%;
+        
+    }
+   h1 > span {
+        font-size: 2rem;
+
+    }
+    .dream {
+        font-size: 0.855rem;
+    }
+    .lefty > button {
+        width: 100%;
+    }
+    .iconheader {
+        gap: 10px;
+    }
+    .stupid{
+        font-size: 0.5rem;
+    }
+    
+    .fucku {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    .mainhousepng{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .housepng {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /* Tablets and larger devices */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
     
 }
 
