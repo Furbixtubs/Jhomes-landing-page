@@ -1,0 +1,766 @@
+
+
+:root {
+    --orange: #FFA800;
+    --orange2: #FFBF23;
+    --black1: #495057;
+    --black2: #313131;
+    --black3: #464E5F;
+    --white: #ffffff;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot");
+    src: url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0376a58122a881d16a294512d3c947b1.svg#Proxima Nova Regular")format("svg");
+}
+
+@font-face {
+    font-family: 'ClashGrotesk-Variable';
+    src: url('fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Variable.woff') format('woff'),
+         url('fonts/ClashGrotesk-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Extralight';
+    src: url('fonts/ClashGrotesk-Extralight.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Extralight.woff') format('woff'),
+         url('fonts/ClashGrotesk-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Light';
+    src: url('fonts/ClashGrotesk-Light.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Light.woff') format('woff'),
+         url('fonts/ClashGrotesk-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Regular';
+    src: url('fonts/ClashGrotesk-Regular.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Regular.woff') format('woff'),
+         url('fonts/ClashGrotesk-Regular.tff') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Medium';
+    src: url('fonts/ClashGrotesk-Medium.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Medium.woff') format('woff'),
+         url('fonts/ClashGrotesk-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Semibold';
+    src: url('fonts/ClashGrotesk-Semibold.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Semibold.woff') format('woff'),
+         url('fonts/ClashGrotesk-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'ClashGrotesk-Bold';
+    src: url('fonts/ClashGrotesk-Bold.woff2') format('woff2'),
+         url('fonts/ClashGrotesk-Bold.woff') format('woff'),
+         url('fonts/ClashGrotesk-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+    header {
+        padding: 2rem 5%;
+  }
+    .logo {
+        width: 10%;
+    }
+
+    .navbar > .logo > img {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links {
+        font-family: "Proxima Nova Regular";
+    }
+    
+    .nav-links, .navved, a {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        text-decoration: none;
+        color: #000;
+        /* font-family: Proxima Nova; */
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal
+    }
+    
+    .nav-links, ul, li {
+        /* padding: 0 10px; */
+        gap: 1.25rem;
+    }
+
+    .blog {
+        text-decoration: underline;
+        text-decoration-color: var(--orange);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.4em;
+        text-decoration-skip-ink: inherit;
+    }
+
+    .hero {
+        margin-bottom: 4rem;
+        background-image: url("./blogimg/hero.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 12.74rem 5%;
+    }
+
+    .hero > div > img {
+        width: 100%;
+    }
+
+    .hero-text {
+      }
+
+      .hero h1 {
+        color: #000;
+        font-family: 'ClashGrotesk-Semibold';
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .hero-text > button {
+        padding: 0.90625rem 1.5rem;
+        background-color: var(--orange2);
+        border: none;
+        border-radius: 0.5rem;
+        margin-top: 2.5rem;
+        color: #000;
+        font-family: "Proxima Nova Regular";
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      .after-hero {
+        /* margin-left: 7.5rem; */
+        padding: 0 5%;
+      }
+
+      .after-hero > h2 {
+        font-family: 'ClashGrotesk-Medium';
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+      }
+
+      .block {
+        display: flex;
+        margin-bottom: 3.5rem;
+        font-family: "Proxima Nova Regular";
+      }
+      
+      .block > button {
+        padding: 0.90625rem 1.5rem;
+        border: none;
+        font-weight: 400;
+        font-family: "Proxima Nova Regular";
+        cursor: pointer;
+      }
+
+      .firstone {
+        background-color: var(--orange2);
+        border-radius: 0.5rem;
+      }
+      
+      .secondone {
+        background-color: transparent;
+      }
+
+      .section2 {
+        margin-bottom: 6.5rem;
+        padding: 0 5%;
+      }
+      .firstline {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem 4rem;
+      }
+
+    .date {
+        margin-top: 1rem;
+        color: var(--black1);
+        font-family: "Proxima Nova Regular";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .firstgrid > h3 {
+        color: var(--black2);
+        font-family: 'ClashGrotesk-Medium';
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 1rem;
+        margin-bottom: 0.94rem;
+    }
+
+    .paragraph {
+        color: var(--black3);
+        font-family: "Proxima Nova Regular";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 1.5rem */
+        margin-top: 0;
+    }
+
+    .section3 {
+        padding: 2rem 5%;
+        position: relative;
+    }
+
+    .section3 > img {
+        position: absolute;
+    }
+    .section3 > div > h2 {
+        position: absolute;
+        top: 40%; /* Adjust to vertically center the text */
+        left: 50%; /* Adjust to horizontally center the text */
+        transform: translate(-50%, -50%); /* Center the text within its container */
+        text-align: center;
+        color: var(--white);
+        text-align: center;
+        font-family: 'ClashGrotesk-Medium';
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .framer {
+        margin-top: 6.5rem;
+    }
+
+    .section4 {
+        padding: 2rem 5%;
+        position: relative;
+        margin-bottom: 6.5rem;
+    }
+
+    .section4 > h2 {
+        color: var(--black2);
+        font-family: 'ClashGrotesk-Medium';
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .lowergrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2.5rem;
+    }
+
+    .lgrid {
+
+        position: relative;
+    }
+    
+    .lgrid > div {
+        position: absolute;
+        color: var(--white);
+        left: 8%;
+        top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    }
+
+    .lgrid > div > .date2 {
+        margin-bottom: 1rem;
+        color: var(--white);
+        font-family: "Proxima Nova Regular";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .lgrid > div > h3 {
+        margin-bottom: 0.94rem;
+        color: var(--white);
+        font-family: 'ClashGrotesk-Medium';
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .lgrid > div > .paragraph2 {
+        color: var(--white);
+        font-family: "Proxima Nova Regular";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 1.5rem */
+    }
+
+    footer {
+        background-color: #1E1E1E;
+        padding: 2rem 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .logos {
+        width: 15%;
+    }
+
+    .logos > img {
+        width: 100%;
+    }
+    .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    h5 {
+        color: #FFF;
+        font-family: 'ClashGrotesk-Medium';
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 1.5rem;
+    }
+    
+    .last {
+        display: flex;
+        gap: 1rem;
+    }
+
+    @media screen and (min-width: 900px) and (max-width: 1140px) {
+        .logo {
+            width: 18%;
+        }
+    
+        .navbar > .logo > img {
+            width: 100%;
+        }
+    
+        .hero h1 {
+            font-size: 3.8rem;
+        }
+
+        .hero-text > button {
+            font-size: 0.9rem;
+        }
+
+        .section3 > div > h2 {
+            font-size: 2rem;
+            top: 37%;
+        }   
+
+        .framer {
+            margin-top: 1.8rem;
+        }
+
+        .section4 {
+            padding: 0 5%;
+        }
+
+        .section4 > h2 {
+            font-size: 2.5rem;
+        } 
+
+        .lgrid > div > .date2 {
+            font-size: 0.7rem;
+        }
+    
+        .lgrid > div > h3 {
+            font-size: 0.65rem;
+        }
+    
+        .lgrid > div > .paragraph2 {
+            font-size: 0.75rem;
+        }
+
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+
+        .logo {
+            width: 18%;
+        }
+    
+        .navbar > .logo > img {
+            width: 100%;
+        }
+            
+        .hero h1 {
+            font-size: 2.8rem;
+        }
+
+        .hero-text > button {
+            font-size: 0.7rem;
+        }
+
+        .after-hero > h2 {
+            font-size: 2rem;
+        }
+
+        .firstline {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2rem;
+            margin-bottom: 0;
+        }
+
+        .section2 {
+            margin-bottom: 1.7rem;
+        }
+
+        .section3 > div > h2 {
+            font-size: 1.5rem;
+            top: 42%;
+        }   
+
+        .framer {
+            margin-top: 1.8rem;
+        }
+
+        .section4 {
+            padding: 0 5%;
+        }
+
+        .section4 > h2 {
+            font-size: 2.5rem;
+        } 
+
+        .lowergrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 1rem;
+        }
+
+        .lgrid > div > .date2 {
+            font-size: 0.7rem;
+        }
+    
+        .lgrid > div > h3 {
+            font-size: 0.8rem;
+        }
+    
+        .lgrid > div > .paragraph2 {
+            font-size: 0.8rem;
+        }
+
+        .copy > div > h5 {
+            font-size: 1rem;
+        }
+    }
+   
+    @media screen and (min-width: 900px) and (max-width: 1140px) {
+        .logo {
+            width: 18%;
+        }
+    
+        .navbar > .logo > img {
+            width: 100%;
+        }
+    
+        .hero h1 {
+            font-size: 2.8rem;
+        }
+
+        .hero-text > button {
+            font-size: 0.9rem;
+        }
+
+        .section3 > div > h2 {
+            font-size: 2rem;
+            top: 37%;
+        }   
+
+        .framer {
+            margin-top: 1.8rem;
+        }
+
+        .section4 {
+            padding: 0 5%;
+        }
+
+        .section4 > h2 {
+            font-size: 2.5rem;
+        } 
+
+        .lgrid > div > .date2 {
+            font-size: 0.7rem;
+        }
+    
+        .lgrid > div > h3 {
+            font-size: 0.65rem;
+        }
+    
+        .lgrid > div > .paragraph2 {
+            font-size: 0.75rem;
+        }
+
+    }
+
+    /* @media screen and (min-width: 320px) and (max-width: 599px) {
+
+        .logo {
+            width: 18%;
+        }
+    
+        .hamburger {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+        }
+        .navbar > .logo > img {
+            width: 100%;
+        }
+            
+        .hero h1 {
+            font-size: 1.5rem;
+        }
+
+        .hero-text > button {
+            font-size: 0.7rem;
+        }
+
+        .after-hero > h2 {
+            font-size: 2rem;
+        }
+
+        .firstline {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 2rem;
+            margin-bottom: 0;
+        }
+
+        .section2 {
+            margin-bottom: 1.7rem;
+        }
+
+        .section3 > div > h2 {
+            font-size: 1.5rem;
+            top: 42%;
+        }   
+
+        .framer {
+            margin-top: 1.8rem;
+        }
+
+        .section4 {
+            padding: 0 5%;
+        }
+
+        .section4 > h2 {
+            font-size: 2.5rem;
+        } 
+
+        .lowergrid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 1rem;
+        }
+
+        .lgrid > div > .date2 {
+            font-size: 0.7rem;
+        }
+    
+        .lgrid > div > h3 {
+            font-size: 0.8rem;
+        }
+    
+        .lgrid > div > .paragraph2 {
+            font-size: 0.8rem;
+        }
+
+        .copy > div > h5 {
+            font-size: 1rem;
+        }
+    } */
+   
+    @media screen and (min-width: 320px) and (max-width: 599px) {
+
+        .logo {
+            width: 35%;
+        }
+    
+        .hamburger {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+        }
+        .navbar > .logo > img {
+            width: 100%;
+        }
+            
+        .hero h1 {
+            font-size: 1.6rem;
+        }
+
+        .hero-text > button {
+            font-size: 0.7rem;
+            width: 100%;
+        }
+
+        .after-hero > h2 {
+            font-size: 2rem;
+        }
+
+        .firstline {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 2rem;
+            margin-bottom: 0;
+        }
+
+        .section2 {
+            margin-bottom: 1.7rem;
+        }
+
+        .section3 > div > h2 {
+            font-size: 1rem;
+            top: 42%;
+        }   
+
+        .framer {
+            margin-top: 1.8rem;
+        }
+
+        .section4 {
+            padding: 0 5%;
+        }
+
+        .section4 > h2 {
+            font-size: 2.5rem;
+        } 
+
+        .lowergrid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 1rem;
+        }
+
+        .lgrid > div > .date2 {
+            font-size: 0.7rem;
+        }
+    
+        .lgrid > div > h3 {
+            font-size: 0.8rem;
+        }
+    
+        .lgrid > div > .paragraph2 {
+            font-size: 0.8rem;
+        }
+
+        .copy > div > h5 {
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #1E1E1E;
+            padding: 2rem 5%;
+        }
+        
+        .logos {
+            width: 50%;
+            margin: 0 auto;
+        }
+    
+        .logos > img {
+            width: 100%;
+        }
+        .copy {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+        
+        h5 {
+            color: #FFF;
+            font-family: 'ClashGrotesk-Medium';
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .last {
+            text-align: center;
+        }
+    }
+   
+    
