@@ -160,22 +160,33 @@ nav a:hover {
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #F3F6F1;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    font-family: 'ClashGrotesk-Medium';
 }
 
-.sidebar li {
+.sidelogo {
+    display: flex;
+    background-color: white;
     width: 100%;
+}
+
+
+.sidebar li {
+    margin: 1.5rem 0;
 }
 
 .sidebar a {
     width: 100%;
 }
+ hr {
+    border: 1.2px solid #525252;
+ }
 
 .blog {
     text-decoration: underline;
@@ -489,7 +500,10 @@ h5 {
     .navbar > .logo > img {
         width: 100%;
     }
-        
+    .sidelogo > img {
+        width: 38%;
+    }
+
     .hero h1 {
         font-size: 2.8rem;
     }
